@@ -1,0 +1,86 @@
+/* ตั้งค่าพื้นฐานให้กับเว็บไซต์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    color: #333; /* สีตัวอักษร */
+}
+
+/* จัดการส่วนหัว */
+header {
+    background-color: #1e90ff; /* สีน้ำเงินสดใส */
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ส่วนเนื้อหาหลัก */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    border-radius: 8px; /* มุมโค้งมน */
+    max-width: 800px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #1e90ff; /* สีหัวข้อ */
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+section img {
+    max-width: 200px;
+    border-radius: 8px; /* มุมรูปภาพโค้งมน */
+}
+
+section p {
+    font-size: 1rem;
+    color: #555; /* สีตัวอักษรในเนื้อหา */
+}
+
