@@ -8,16 +8,44 @@
 body { 
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
-    background-color: #f9f9f9; 
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของ body เป็นขาว */
     color: #799cf7; 
 }
 
 header { 
-    background: #799cf7; 
+    background: #799cf7; /* พื้นหลังของ header ยังเป็นสี #799cf7 */
     color: #fff; 
     padding: 1rem 0; 
     text-align: center; 
 } 
+@media screen and (max-width:800px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .menu-toggle .bar{
+        background-color: black;
+    }
+    .title{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+    .title.active{
+        display: flex;
+    }
+
+}
 
 nav ul { 
     list-style: none; 
@@ -41,6 +69,7 @@ main {
     padding: 2rem; 
     max-width: 1200px; 
     margin: 0 auto; 
+    background-color: #ffffff; /* พื้นหลังของ main เป็นสีขาว */
 } 
 
 section h2 { 
@@ -56,7 +85,7 @@ section div {
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
-    background: #fff; 
+    background: #fff; /* พื้นหลังของ div ในแต่ละ section เป็นสีขาว */
     border-radius: 10px; 
     padding: 1.5rem; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -80,4 +109,12 @@ section p {
     font-size: 1rem; 
     color: #555; 
 }
-
+.img-highlight{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.imageshl {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
